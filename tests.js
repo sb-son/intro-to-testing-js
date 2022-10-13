@@ -37,7 +37,7 @@ describe("subtract", function(){
     });
 });
 
-//Exercise 1
+//Exercise 1-9 sayHello()
 describe("sayHello", function (){
     it('should be a defined function', function (){
         expect(typeof sayHello).toBe('function');
@@ -57,12 +57,16 @@ describe("sayHello", function (){
     it('should say "Hello" to the name we pass it', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
-    it('should say "Hello" to the name we pass it', function () {
+    it('should say "Hello, World!" when input is empty', function () {
         expect(sayHello()).toBe("Hello, World!");
     });
-    it('should say "Hello" to the name we pass it', function () {
-        expect(sayHello()).toBe("Hello, World!");
+    it('should say "Hello, World!" when input true', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
     });
+    it('should say "Hello, World!" when input false', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+
 });
 
 //Exercise 2
