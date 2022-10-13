@@ -12,7 +12,7 @@ function subtract(x, y) {
 }
 //Exercise 1
 function sayHello(input){
-    return "Hello, " + input + "!";
+        return "Hello, " + input + "!";
     // if (input === "Alex") {
     //     return "Hello, Alex!";
     // } else if (input === "Pat") {

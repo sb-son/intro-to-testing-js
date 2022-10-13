@@ -45,11 +45,8 @@ describe("sayHello", function (){
     it('should return a string when called', function (){
        expect(typeof sayHello()).toBe('string');
     });
-    it('should say "Hello" to any string we pass to it', function (){
-        expect(sayHello()).toBe('Hello');
-    });
     it("should never return 'undefined' when called", function() {
-        expect(helloWorld()).not.toBe(undefined);
+        expect(sayHello()).not.toBe(undefined);
     });
     it('should say "Hello" to the name we pass it', function () {
         expect(sayHello("Jane")).toBe("Hello, Jane!");
@@ -59,6 +56,12 @@ describe("sayHello", function (){
     });
     it('should say "Hello" to the name we pass it', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+    it('should say "Hello" to the name we pass it', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should say "Hello" to the name we pass it', function () {
+        expect(sayHello()).toBe("Hello, World!");
     });
 });
 
