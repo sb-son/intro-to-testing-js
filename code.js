@@ -46,3 +46,11 @@ function isEven(num){
 function isVowel(str){
     return str === "a" || str === "e" || str === "i" || str === "o" || str === "u" || str === "A" || str === "E" || str === "I" || str === "O" || str === "U"
 }
+//add() Exercise 13
+function add(x,y) {
+    if (!isNaN(x) && !isNaN(y)) {
+        return parseFloat(x) + parseFloat(y);
+    } else {
+        return isNaN;
+    }
+}

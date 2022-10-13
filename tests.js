@@ -158,3 +158,33 @@ describe("isVowel", function (){
         expect(isVowel()).toBe(false)
     });
 });
+//exercise 13 add function
+describe("add", function(){
+    it("should be a defined function", function(){
+        expect(typeof add).toBe('function');
+    });
+    it("should return a number when passed two number arguments", function(){
+        expect(typeof add(3,1)).toBe("number");
+    });
+    it("should return 5 when passed the arguments of 3 and 2", function() {
+        expect(add(3,2)).toBe(5);
+    });
+    it("should return -12 when passed the arguments of -3 and -9", function() {
+        expect(add(-3,-9)).toBe(-12);
+    });
+    it("should return 11 when passed the arguments of 6 and '5'", function() {
+        expect(add('5',6)).toBe(11);
+    });
+    it("should return 6 when passed the arguments of '-4' and '10'", function() {
+        expect(add('-4','10')).toBe(6);
+    });
+    it("should return NaN when passed the arguments of 'banana' and 'split'", function() {
+        expect(add('banana','split')).toBe(isNaN);
+    });
+    it('should return NaN when passed the arguments 2 and "apples"', function () {
+        expect(add(2,'apples')).toBe(isNaN);
+    });
+    it('should return NaN when arguments are empty', function () {
+        expect(add()).toBe(isNaN);
+    });
+});
