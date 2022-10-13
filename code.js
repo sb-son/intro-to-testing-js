@@ -42,3 +42,7 @@ function isEven(num){
         return false;
     }
 }
+//isVowel() Exercise 12
+function isVowel(str){
+    return str === "a" || str === "e" || str === "i" || str === "o" || str === "u" || str === "A" || str === "E" || str === "I" || str === "O" || str === "U"
+}
