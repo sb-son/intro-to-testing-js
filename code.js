@@ -34,3 +34,11 @@ function isFive(num){
         return false;
     }
 }
+//isEven() Exercise 11
+function isEven(num){
+    if (num % 2 === 0 && num !== false){
+    return true;
+    } else {
+        return false;
+    }
+}
