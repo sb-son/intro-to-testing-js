@@ -11,7 +11,15 @@ function subtract(x, y) {
     }
 }
 //Exercise 1
-function sayHello(){
-    return "Hello";
+function sayHello(input){
+    return "Hello, " + input + "!";
+    // if (input === "Alex") {
+    //     return "Hello, Alex!";
+    // } else if (input === "Pat") {
+    //     return "Hello, Pat!"
+    // }
+    // else {
+    //     return "Hello, Jane!";
+    // }
 }
 //Exercise 2
