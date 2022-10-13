@@ -10,7 +10,7 @@ function subtract(x, y) {
         return false;
     }
 }
-//Exercise 1
+//sayHello() Exercise 1-9
 function sayHello(input){
     if (input === undefined || input == true || input == false) {
         return "Hello, World!"
@@ -26,4 +26,11 @@ function sayHello(input){
     //     return "Hello, Jane!";
     // }
 }
-//Exercise 2
+//isFive() Exercise 10
+function isFive(num){
+    if (typeof num === 'number' && num === 5) {
+        return num;
+    } else {
+        return false;
+    }
+}

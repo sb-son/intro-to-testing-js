@@ -69,4 +69,27 @@ describe("sayHello", function (){
 
 });
 
-//Exercise 2
+//Exercise 10 isFive()
+describe("isFive", function(){
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a number when passed number arguments', function () {
+        expect(typeof isFive(5)).toBe('number');
+    });
+    it('should expect the argument of 5 to be equal to 5', function () {
+        expect(isFive(5)).toBe(5);
+    });
+    it('should expect string values to be false', function () {
+        expect(isFive("")).toBe(false);
+    });
+    it('should expect the argument of -5 to not be equal to 5', function () {
+        expect(isFive(-5)).toBe(false);
+    });
+    it('should expect the argument of 3 to not be equal to 5', function () {
+        expect(isFive(3)).toBe(false);
+    });
+    it('should expect the argument of 1 to not be equal to 5', function () {
+        expect(isFive(3)).toBe(false);
+    });
+});
